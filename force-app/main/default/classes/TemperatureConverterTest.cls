@@ -7,6 +7,7 @@ private class TemperatureConverterTest {
         message.subject = 'Subject Test Message';
         message.plainTextBody = 'This is the message body.';
         Messaging.SingleEmailMessage[] messages =   new List<Messaging.SingleEmailMessage> {message};
+        
         Messaging.SendEmailResult[] results = Messaging.sendEmail(messages);
     }
 }
